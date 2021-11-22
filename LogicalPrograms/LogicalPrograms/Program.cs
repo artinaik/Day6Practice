@@ -29,6 +29,10 @@ namespace LogicalPrograms
                     PrimeNumber primeNumberobj = new PrimeNumber();
                     primeNumberobj.CheckPrime();
                     break;
+                case 4:
+                    ReverseNumber reverseNumberobj=new ReverseNumber();
+                    reverseNumberobj.FindReverse();
+                    break;
             }
             
             Console.ReadKey();
