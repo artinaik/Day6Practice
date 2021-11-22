@@ -10,9 +10,23 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
+            int choice;
             Console.WriteLine("Logical Programs");
-            Fibonoccies fibonocciesobj = new Fibonoccies();
-            fibonocciesobj.FindSeries();
+            Console.WriteLine("1)Fibonoccie Series 2)Perfect Number");
+            Console.WriteLine("Enter your choice");
+            choice = Convert.ToInt32(Console.ReadLine());
+            switch(choice)
+            {
+                case 1:
+                    Fibonoccies fibonocciesobj = new Fibonoccies();
+                    fibonocciesobj.FindSeries();
+                    break;
+                case 2:
+                    PerfectNumber perfectNumberobj = new PerfectNumber();
+                    perfectNumberobj.CheckPerfectNumber();
+                    break;
+            }
+            
             Console.ReadKey();
         }
     }
