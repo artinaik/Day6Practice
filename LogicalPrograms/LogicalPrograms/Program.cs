@@ -12,8 +12,8 @@ namespace LogicalPrograms
         {
             int choice;
             Console.WriteLine("Logical Programs");
-            Console.WriteLine("1)Fibonoccie Series 2)Perfect Number 3)Prime Number 4)Reverse Number 5)Coupon Number 6)Stopwatch 7)Notes Problem");
-            Console.WriteLine("Enter your choice");
+            Console.WriteLine("\n1)Fibonoccie Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number \n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week");
+            Console.WriteLine("\nEnter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
             {
@@ -44,6 +44,9 @@ namespace LogicalPrograms
                 case 7:
                     NoteChange noteChangeobj = new NoteChange();
                     noteChangeobj.CalculateNotes();
+                    break;
+                case 8:
+                    Util.FindDayOfWeek();
                     break;
             }
             
