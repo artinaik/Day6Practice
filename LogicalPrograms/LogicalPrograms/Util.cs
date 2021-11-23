@@ -58,5 +58,18 @@ namespace LogicalPrograms
             Console.WriteLine("Monthly Payment is " + payment);
 
         }
+        public static void Sqrt()
+        {
+            double num;
+            Console.WriteLine("Enter a number");
+            num = Convert.ToInt32(Console.ReadLine());
+            double t = num;
+            while((Math.Abs(t - (num / t)) > (double.Epsilon * t)))
+            {
+                t = ((num / t)+t)/2;
+            }
+            Console.WriteLine(t);
+          
+        }
     }
 }
