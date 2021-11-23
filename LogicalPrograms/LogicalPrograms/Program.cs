@@ -12,7 +12,7 @@ namespace LogicalPrograms
         {
             int choice;
             Console.WriteLine("Logical Programs");
-            Console.WriteLine("1)Fibonoccie Series 2)Perfect Number 3)Prime Number");
+            Console.WriteLine("1)Fibonoccie Series 2)Perfect Number 3)Prime Number 4)Reverse Number 5)Coupon Number 6)Stopwatch");
             Console.WriteLine("Enter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
@@ -36,6 +36,10 @@ namespace LogicalPrograms
                 case 5:
                     CouponNumber couponNumberobj = new CouponNumber();
                     couponNumberobj.CheckCoupon();
+                    break;
+                case 6:
+                    StopwatchProgram stopwatchobj = new StopwatchProgram();
+                    stopwatchobj.FindTime();
                     break;
             }
             
