@@ -42,7 +42,20 @@ namespace LogicalPrograms
                     break;
                     
             }
-
+        }
+        public static void MonthlyPayment()
+        {
+            double principal,year,rate;
+            Console.WriteLine("Enter Principal loan amount ");
+            principal = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter numbers of how many years want to pay amount");
+            year = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter rate of interest ");
+            rate = Convert.ToDouble(Console.ReadLine());
+            double r = rate / (12 * 100);
+            double n = 12 * year;
+            double payment = (principal * r) / (1 - (Math.Pow((1 + r), -n)));
+            Console.WriteLine("Monthly Payment is " + payment);
 
         }
     }
