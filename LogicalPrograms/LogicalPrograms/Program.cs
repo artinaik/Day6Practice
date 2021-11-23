@@ -33,6 +33,10 @@ namespace LogicalPrograms
                     ReverseNumber reverseNumberobj=new ReverseNumber();
                     reverseNumberobj.FindReverse();
                     break;
+                case 5:
+                    CouponNumber couponNumberobj = new CouponNumber();
+                    couponNumberobj.CheckCoupon();
+                    break;
             }
             
             Console.ReadKey();
