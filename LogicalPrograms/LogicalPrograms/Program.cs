@@ -12,7 +12,7 @@ namespace LogicalPrograms
         {
             int choice;
             Console.WriteLine("Logical Programs");
-            Console.WriteLine("\n1)Fibonoccie Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number \n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week");
+            Console.WriteLine("\n1)Fibonoccie Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number \n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week \n9)Temperature Conversion");
             Console.WriteLine("\nEnter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
@@ -47,6 +47,9 @@ namespace LogicalPrograms
                     break;
                 case 8:
                     Util.FindDayOfWeek();
+                    break;
+                case 9:
+                    Util.TemperatureConversion();
                     break;
             }
             
