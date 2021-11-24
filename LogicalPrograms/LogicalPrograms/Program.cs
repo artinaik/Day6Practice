@@ -13,7 +13,8 @@ namespace LogicalPrograms
             int choice;
             Console.WriteLine("Logical Programs");
             Console.WriteLine("\n1)Fibonoccie Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number " +
-                "\n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week \n9)Temperature Conversion \n10)MonthlyPayment \n11)Sqrt of number");
+                "\n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week \n9)Temperature Conversion \n10)MonthlyPayment \n11)Sqrt of number" +
+                "\n12)Binary Conversion \n13)String replace");
             Console.WriteLine("\nEnter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
@@ -58,6 +59,13 @@ namespace LogicalPrograms
                 case 11:
                     Util.Sqrt();
                     break;
+                case 12:
+                    Util.ToBinary();
+                    break;
+                case 13:
+                    StringReplace stringReplaceobj = new StringReplace();
+                    stringReplaceobj.ReplaceTheString();
+                        break;
             }
             
             Console.ReadKey();

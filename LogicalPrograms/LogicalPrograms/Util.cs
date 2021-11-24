@@ -71,5 +71,12 @@ namespace LogicalPrograms
             Console.WriteLine(t);
           
         }
+        public static void ToBinary()
+        {
+            Console.WriteLine("Enter a number");
+            int num = Convert.ToInt32(Console.ReadLine());
+           // int arr[] = new int[];
+
+        }
     }
 }

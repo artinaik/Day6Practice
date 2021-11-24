@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CouponNumber.cs" />
+    <Compile Include="StringReplace.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Fibonocci.cs" />
     <Compile Include="NoteChange.cs" />
