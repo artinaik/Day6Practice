@@ -14,7 +14,7 @@ namespace LogicalPrograms
             Console.WriteLine("Logical Programs");
             Console.WriteLine("\n1)Fibonoccie Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number " +
                 "\n6)Stopwatch \n7)Notes Problem \n8)Find Day of Week \n9)Temperature Conversion \n10)MonthlyPayment \n11)Sqrt of number" +
-                "\n12)Binary Conversion \n13)String replace");
+                "\n12)Binary Conversion \n13)String replace \n14)Decimal to binary \n15)Binary to decimal");
             Console.WriteLine("\nEnter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
@@ -44,8 +44,7 @@ namespace LogicalPrograms
                     stopwatchobj.FindTime();
                     break;
                 case 7:
-                    NoteChange noteChangeobj = new NoteChange();
-                    noteChangeobj.CalculateNotes();
+                    NoteChange.CalculateNotes();                    
                     break;
                 case 8:
                     Util.FindDayOfWeek();
@@ -66,6 +65,15 @@ namespace LogicalPrograms
                     StringReplace stringReplaceobj = new StringReplace();
                     stringReplaceobj.ReplaceTheString();
                         break;
+                case 14:
+                    DecimalToBinary.FindDecimalToBinary();
+                    break;
+                case 15:
+                    DecimalToBinary.FindBinaryToDecimal();
+                    break;
+                default:
+                    Console.WriteLine("Please enter valid choice");
+                    break;
             }
             
             Console.ReadKey();

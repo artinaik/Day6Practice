@@ -8,7 +8,7 @@ namespace LogicalPrograms
 {
     class NoteChange
     {
-        public void CalculateNotes()
+        public static void CalculateNotes()
         {
             Console.WriteLine("Enter note in Rs. to be returned by vending machine");
             int note = Convert.ToInt32(Console.ReadLine());
